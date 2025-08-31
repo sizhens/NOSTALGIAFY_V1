@@ -1,5 +1,4 @@
 import nostalgia_years
-import personality_quiz
 import dates_lister
 import requests
 import json
