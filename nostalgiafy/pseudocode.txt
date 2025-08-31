@@ -1,0 +1,46 @@
+Input -> Type in your age
+Year -> 2025 (or whatever year it is)
+Target age -> 12-15
+Formula:
+age_difference = {current_age} - {prime_age}
+Example: 28 - 12 = 16, therefore the age difference is 16 and we are looking for music from 16 years ago
+
+target_year_start = current_year - age_difference
+So, 2025 - 16 = 2009 in this context
+target_year_end = target_year_start + 3
+
+Personality quiz: 
+    a series of questions about what kind of music you like
+    this targets a particular set of billboard songs
+    eventually, you arrive at a pool of billboard lists which
+        are sorted by genre and year
+        are pulled from at random, according to genre and year
+        shuffled into a playlist
+
+Generate dictionary of top 100s hits from the last 3 decades every year
+find the "nostalgia years"
+pull songs from those years
+return songs
+
+
+MODULES:
+Nostalgia Years Generator
+    determines what Prime Nostalgia Years are
+
+Personality Quiz 
+    determines what genre Billboard 100s to query
+
+Billboard Hot 100 Puller
+    Requests from database of billboard top 100s
+
+Playlist builder
+    Randomizes selections from given billboard top 100s in:
+        Prime years
+        from
+            genres
+    and compiles them into a list or dictionary
+
+
+
+last day of year = datetime.date({years[0]}, 12, 31)
+if date 
